@@ -1,0 +1,63 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SVG.Util", "Util\SVG.Util.vcxproj", "{E99F7856-7BDA-3F23-BC05-C69E116E2947}"
+=======
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SVG.Util", "Util\SVG.Util.vcxproj", "{3FC4E39F-6FD1-3494-BFE7-65E5A5DC9876}"
+>>>>>>> 8a220e4b6495ddc4ae11fd41a639e942a2cfaa31
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SVG.Entity", "Entity\SVG.Entity.vcxproj", "{34DD689C-7414-35DA-A446-EEC8BA4EABAE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E99F7856-7BDA-3F23-BC05-C69E116E2947} = {E99F7856-7BDA-3F23-BC05-C69E116E2947}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SVG.IO", "IO\SVG.IO.vcxproj", "{4C7B544F-DAC4-329E-898F-547F117C082A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{34DD689C-7414-35DA-A446-EEC8BA4EABAE} = {34DD689C-7414-35DA-A446-EEC8BA4EABAE}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SVG.Solver", "Solver\SVG.Solver.vcxproj", "{4A4C23E1-7EAF-3D16-9E99-937EAD6495E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SVG.App", "App\SVG.App.vcxproj", "{2464BE43-84EF-317B-931B-17DFA7393CE5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E99F7856-7BDA-3F23-BC05-C69E116E2947} = {E99F7856-7BDA-3F23-BC05-C69E116E2947}
+		{34DD689C-7414-35DA-A446-EEC8BA4EABAE} = {34DD689C-7414-35DA-A446-EEC8BA4EABAE}
+		{4C7B544F-DAC4-329E-898F-547F117C082A} = {4C7B544F-DAC4-329E-898F-547F117C082A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E99F7856-7BDA-3F23-BC05-C69E116E2947}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E99F7856-7BDA-3F23-BC05-C69E116E2947}.Debug|Win32.Build.0 = Debug|Win32
+		{E99F7856-7BDA-3F23-BC05-C69E116E2947}.Release|Win32.ActiveCfg = Release|Win32
+		{E99F7856-7BDA-3F23-BC05-C69E116E2947}.Release|Win32.Build.0 = Release|Win32
+		{34DD689C-7414-35DA-A446-EEC8BA4EABAE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34DD689C-7414-35DA-A446-EEC8BA4EABAE}.Debug|Win32.Build.0 = Debug|Win32
+		{34DD689C-7414-35DA-A446-EEC8BA4EABAE}.Release|Win32.ActiveCfg = Release|Win32
+		{34DD689C-7414-35DA-A446-EEC8BA4EABAE}.Release|Win32.Build.0 = Release|Win32
+		{4C7B544F-DAC4-329E-898F-547F117C082A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4C7B544F-DAC4-329E-898F-547F117C082A}.Debug|Win32.Build.0 = Debug|Win32
+		{4C7B544F-DAC4-329E-898F-547F117C082A}.Release|Win32.ActiveCfg = Release|Win32
+		{4C7B544F-DAC4-329E-898F-547F117C082A}.Release|Win32.Build.0 = Release|Win32
+		{4A4C23E1-7EAF-3D16-9E99-937EAD6495E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4A4C23E1-7EAF-3D16-9E99-937EAD6495E2}.Debug|Win32.Build.0 = Debug|Win32
+		{4A4C23E1-7EAF-3D16-9E99-937EAD6495E2}.Release|Win32.ActiveCfg = Release|Win32
+		{4A4C23E1-7EAF-3D16-9E99-937EAD6495E2}.Release|Win32.Build.0 = Release|Win32
+		{2464BE43-84EF-317B-931B-17DFA7393CE5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2464BE43-84EF-317B-931B-17DFA7393CE5}.Debug|Win32.Build.0 = Debug|Win32
+		{2464BE43-84EF-317B-931B-17DFA7393CE5}.Release|Win32.ActiveCfg = Release|Win32
+		{2464BE43-84EF-317B-931B-17DFA7393CE5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		Qt5Version = qt5
+	EndGlobalSection
+EndGlobal

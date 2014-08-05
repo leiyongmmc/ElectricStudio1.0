@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2464BE43-84EF-317B-931B-17DFA7393CE5}</ProjectGuid>
+    <RootNamespace>SVG.App</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\..\Bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\Builder\App\</IntermediateDirectory>
+    <PrimaryOutput>SVG.App</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\..\Bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\Builder\App\</IntermediateDirectory>
+    <PrimaryOutput>SVG.App</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SVG.App</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SVG.App</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Util;..\Entity;..\IO;$(QTDIR)\include;$(QTDIR)\include\QtSvg;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtSensors;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;..\..\Builder\App;.;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\Builder\App\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_SVG_LIB;QT_WIDGETS_LIB;QT_SENSORS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;$(QTDIR)\lib\qtmain.lib;$(QTDIR)\lib\Qt5Core.lib;F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\\SVG.Util.lib;F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\\SVG.Entity.lib;F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\\SVG.IO.lib;$(QTDIR)\lib\Qt5Svg.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Sensors.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;$(QTDIR)\lib;F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\SVG.App.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_SVG_LIB;QT_WIDGETS_LIB;QT_SENSORS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Util;..\Entity;..\IO;$(QTDIR)\include;$(QTDIR)\include\QtSvg;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtSensors;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;..\..\Builder\App;.;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\Builder\App\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_SVG_LIB;QT_WIDGETS_LIB;QT_SENSORS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;$(QTDIR)\lib\qtmaind.lib;$(QTDIR)\lib\Qt5Cored.lib;F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\\SVG.Util.lib;F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\\SVG.Entity.lib;F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\\SVG.IO.lib;$(QTDIR)\lib\Qt5Svgd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Sensorsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;$(QTDIR)\lib;F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\SVG.App.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_SVG_LIB;QT_WIDGETS_LIB;QT_SENSORS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Builder\App\moc_actionmanager.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_alignitems.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_appcommand.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_appmanager.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_arrangetoolbar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_coordinateframe.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_editortoolbar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_electricpropertytablewidget.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_fileservice.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_graphicsscene.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_graphicsview.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_griddialog.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_gridsetting.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_locationandsizetoolbar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_maintoolbar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_mainwindow.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_menumanager.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_optionsdialog.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_propertiesandstyletoolbar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_propertiesandstylewidget.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_resourcetreewidget.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_shapeformattingtoolbar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_statubar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_textformattingtoolbar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_toolbar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_toolbarmanager.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_toolboxtoolbar.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_toolboxwidget.cpp" />
+    <ClCompile Include="..\..\Builder\App\moc_triggermanager.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_Images.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_Theme.cpp" />
+    <ClCompile Include="Trigger\actionmanager.cpp" />
+    <ClCompile Include="alignitems.cpp" />
+    <ClCompile Include="appcommand.cpp" />
+    <ClCompile Include="appglobal.cpp" />
+    <ClCompile Include="appmanager.cpp" />
+    <ClCompile Include="Trigger\arrangetoolbar.cpp" />
+    <ClCompile Include="Grid\coordinateframe.cpp" />
+    <ClCompile Include="Trigger\editortoolbar.cpp" />
+    <ClCompile Include="Property\electricpropertytablewidget.cpp" />
+    <ClCompile Include="FileInfo\fileservice.cpp" />
+    <ClCompile Include="graphicsscene.cpp" />
+    <ClCompile Include="graphicsview.cpp" />
+    <ClCompile Include="griddialog.cpp" />
+    <ClCompile Include="gridsetting.cpp" />
+    <ClCompile Include="Trigger\locationandsizetoolbar.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Trigger\maintoolbar.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="Trigger\menumanager.cpp" />
+    <ClCompile Include="optionsdialog.cpp" />
+    <ClCompile Include="Property\propertiesandstyletoolbar.cpp" />
+    <ClCompile Include="Property\propertiesandstylewidget.cpp" />
+    <ClCompile Include="resourcelibrary.cpp" />
+    <ClCompile Include="resourcemanager.cpp" />
+    <ClCompile Include="resourcetreewidget.cpp" />
+    <ClCompile Include="Trigger\shapeformattingtoolbar.cpp" />
+    <ClCompile Include="Trigger\statubar.cpp" />
+    <ClCompile Include="svgitem.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="Trigger\textformattingtoolbar.cpp" />
+    <ClCompile Include="Trigger\toolbar.cpp" />
+    <ClCompile Include="Trigger\toolbarmanager.cpp" />
+    <ClCompile Include="toolboxtoolbar.cpp" />
+    <ClCompile Include="toolboxwidget.cpp" />
+    <ClCompile Include="Trigger\triggermanager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Trigger\actionmanager.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing actionmanager.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing actionmanager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="alignitems.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing alignitems.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing alignitems.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="appcommand.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing appcommand.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing appcommand.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="appglobal.h" />
+    <CustomBuild Include="appmanager.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing appmanager.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing appmanager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\arrangetoolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing arrangetoolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing arrangetoolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Grid\coordinateframe.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing coordinateframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing coordinateframe.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\editortoolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing editortoolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing editortoolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Property\electricpropertytablewidget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing electricpropertytablewidget.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing electricpropertytablewidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="FileInfo\fileservice.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing fileservice.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing fileservice.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="graphicsscene.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing graphicsscene.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing graphicsscene.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="graphicsview.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing graphicsview.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing graphicsview.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="griddialog.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing griddialog.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing griddialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="gridsetting.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing gridsetting.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing gridsetting.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\locationandsizetoolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing locationandsizetoolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing locationandsizetoolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\maintoolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing maintoolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing maintoolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing mainwindow.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing mainwindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\menumanager.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing menumanager.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing menumanager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="optionsdialog.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing optionsdialog.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing optionsdialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Property\propertiesandstyletoolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing propertiesandstyletoolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing propertiesandstyletoolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Property\propertiesandstylewidget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing propertiesandstylewidget.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing propertiesandstylewidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_coordinateframe.h" />
+    <ClInclude Include="GeneratedFiles\ui_griddialog.h" />
+    <ClInclude Include="GeneratedFiles\ui_optionsdialog.h" />
+    <ClInclude Include="resourcelibrary.h" />
+    <ClInclude Include="resourcemanager.h" />
+    <CustomBuild Include="resourcetreewidget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing resourcetreewidget.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing resourcetreewidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\shapeformattingtoolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing shapeformattingtoolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing shapeformattingtoolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\statubar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing statubar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing statubar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="svgitem.h" />
+    <CustomBuild Include="Trigger\textformattingtoolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing textformattingtoolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing textformattingtoolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\toolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing toolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing toolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\toolbarmanager.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing toolbarmanager.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing toolbarmanager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="toolboxtoolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing toolboxtoolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing toolboxtoolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="toolboxwidget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing toolboxwidget.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing toolboxwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\triggermanager.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing triggermanager.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Builder\App\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I.\..\Util" "-I.\..\Entity" "-I.\..\IO" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtSvg" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSensors" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I.\..\..\Builder\App" "-I." "-I$(QTDIR)\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing triggermanager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Builder\App\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app_trans_ch.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Grid\coordinateframe.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="griddialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="optionsdialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Images\Add.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\AlignBottom.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\AlignCenter.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\AlignLeft.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\AlignMiddle.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\AlignRight.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\AlignTop.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\ArrowDown.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\ArrowRight.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\ArrowStyle.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Bold.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Clear.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\ConnectorMode.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Copy.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Cut.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Delete.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\DistributeH.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\DistributeV.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\File.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\FillColor.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Find.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Folder.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Group.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\Images\Images.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);..\Images\Copy.png;..\Images\Cut.png;..\Images\Delete.png;..\Images\Open.png;..\Images\Paste.png;..\Images\New.png;..\Images\Save.png;..\Images\Undo.png;..\Images\Redo.png;..\Images\LineColor.png;..\Images\LineWidth.png;..\Images\LinePattern.png;..\Images\FillColor.png;..\Images\ArrowStyle.png;..\Images\AlignLeft.png;..\Images\AlignCenter.png;..\Images\AlignRight.png;..\Images\AlignTop.png;..\Images\AlignMiddle.png;..\Images\AlignBottom.png;..\Images\DistributeH.png;..\Images\DistributeV.png;..\Images\SelectMode.png;..\Images\ConnectorMode.png;..\Images\Group.png;..\Images\UnGroup.png;..\Images\TextColor.png;..\Images\Underline.png;..\Images\Italic.png;..\Images\TextAlignLeft.png;..\Images\TextAlignCenter.png;..\Images\TextAlignRight.png;..\Images\Bold.png;..\Images\Find.png;..\Images\Option.png;..\Images\Add.png;..\Images\Remove.png;..\Images\ArrowRight.png;..\Images\ArrowDown.png;..\Images\loop_12x12.png;..\Images\File.png;..\Images\Folder.png;..\Images\Refresh.png;..\Images\test1.png;..\Images\Clear.png;..\Images\Submit.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);..\Images\Copy.png;..\Images\Cut.png;..\Images\Delete.png;..\Images\Open.png;..\Images\Paste.png;..\Images\New.png;..\Images\Save.png;..\Images\Undo.png;..\Images\Redo.png;..\Images\LineColor.png;..\Images\LineWidth.png;..\Images\LinePattern.png;..\Images\FillColor.png;..\Images\ArrowStyle.png;..\Images\AlignLeft.png;..\Images\AlignCenter.png;..\Images\AlignRight.png;..\Images\AlignTop.png;..\Images\AlignMiddle.png;..\Images\AlignBottom.png;..\Images\DistributeH.png;..\Images\DistributeV.png;..\Images\SelectMode.png;..\Images\ConnectorMode.png;..\Images\Group.png;..\Images\UnGroup.png;..\Images\TextColor.png;..\Images\Underline.png;..\Images\Italic.png;..\Images\TextAlignLeft.png;..\Images\TextAlignCenter.png;..\Images\TextAlignRight.png;..\Images\Bold.png;..\Images\Find.png;..\Images\Option.png;..\Images\Add.png;..\Images\Remove.png;..\Images\ArrowRight.png;..\Images\ArrowDown.png;..\Images\loop_12x12.png;..\Images\File.png;..\Images\Folder.png;..\Images\Refresh.png;..\Images\test1.png;..\Images\Clear.png;..\Images\Submit.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\Images\Italic.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\LineColor.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\LinePattern.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\LineWidth.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\New.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Open.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Option.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Paste.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Redo.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Refresh.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Remove.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Save.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\SelectMode.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Submit.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\TextAlignCenter.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\TextAlignLeft.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\TextAlignRight.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\TextColor.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\Theme\Theme.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);..\Theme\stylesheet.qss;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);..\Theme\stylesheet.qss;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\Images\UnGroup.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Underline.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\Undo.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\loop_12x12.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Theme\stylesheet.qss">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Images\test1.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_Win32="qt5" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

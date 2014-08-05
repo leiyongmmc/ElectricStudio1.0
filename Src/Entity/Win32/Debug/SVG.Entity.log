@@ -1,0 +1,122 @@
+﻿生成启动时间为 8/6/2014 6:15:17 AM。
+     1>项目“F:\Qt\Project\Local\ElectricStudio1.0\Src\Entity\SVG.Entity.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Moc'ing itemcommand.h...
+         Moc'ing kresizefocus.h...
+         Moc'ing krotateitem.h...
+         Moc'ing kunititem.h...
+         Moc'ing pointitemcontainer.h...
+         Moc'ing shapeformattingsetting.h...
+         Moc'ing svgcirclecommonelement.h...
+         Moc'ing svgcircleelement.h...
+         Moc'ing svgcirclefloorelement.h...
+         Moc'ing svgellipseelement.h...
+         Moc'ing svglineelement.h...
+         Moc'ing svgnode.h...
+         Moc'ing svgnodecontainer.h...
+         Moc'ing svgnodecontainerfake.h...
+         Moc'ing svgnodeelement.h...
+         Moc'ing svgpathelement.h...
+         Moc'ing svgpointitem.h...
+         Moc'ing svgpolygonelement.h...
+         Moc'ing svgpolylineelement.h...
+         Moc'ing svgrectelement.h...
+         Moc'ing svgtextelement.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Util /IF:\qt\qt5.3.1\5.3\msvc2013_opengl\include /IF:\qt\qt5.3.1\5.3\msvc2013_opengl\include\QtSvg /IF:\qt\qt5.3.1\5.3\msvc2013_opengl\include\QtWidgets /IF:\qt\qt5.3.1\5.3\msvc2013_opengl\include\QtXml /IF:\qt\qt5.3.1\5.3\msvc2013_opengl\include\QtGui /IF:\qt\qt5.3.1\5.3\msvc2013_opengl\include\QtCore /Idebug /I"F:\qt\qt5.3.1\5.3\msvc2013_opengl\mkspecs\win32-msvc2013" /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D ENTITY_LIBRARY /D QT_SVG_LIB /D QT_WIDGETS_LIB /D QT_XML_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 Debug\moc_itemcommand.cpp Debug\moc_kresizefocus.cpp Debug\moc_krotateitem.cpp Debug\moc_kunititem.cpp Debug\moc_pointitemcontainer.cpp Debug\moc_shapeformattingsetting.cpp Debug\moc_svgcirclecommonelement.cpp Debug\moc_svgcircleelement.cpp Debug\moc_svgcirclefloorelement.cpp Debug\moc_svgellipseelement.cpp Debug\moc_svglineelement.cpp Debug\moc_svgnode.cpp Debug\moc_svgnodecontainer.cpp Debug\moc_svgnodecontainerfake.cpp Debug\moc_svgnodeelement.cpp Debug\moc_svgpathelement.cpp Debug\moc_svgpointitem.cpp Debug\moc_svgpolygonelement.cpp Debug\moc_svgpolylineelement.cpp Debug\moc_svgrectelement.cpp Debug\moc_svgtextelement.cpp
+         moc_itemcommand.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_kresizefocus.cpp
+         moc_krotateitem.cpp
+         moc_kunititem.cpp
+         moc_pointitemcontainer.cpp
+         moc_shapeformattingsetting.cpp
+         moc_svgcirclecommonelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgcircleelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgcirclefloorelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgellipseelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svglineelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgnode.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgnodecontainer.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgnodecontainerfake.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgnodeelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgpathelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgpointitem.cpp
+         moc_svgpolygonelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgpolylineelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_svgrectelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+         正在编译...
+         moc_svgtextelement.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\Bin\\SVG.Entity.dll" /NOLOGO /LIBPATH:F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib /LIBPATH:F:\Qt\Project\Local\ElectricStudio1.0\Src\Entity\..\..\Bin\ /LIBPATH:F:\qt\qt5.3.1\5.3\msvc2013_opengl\lib glu32.lib opengl32.lib gdi32.lib user32.lib F:\Qt\Project\Local\ElectricStudio1.0\Src\Entity\..\..\Bin\\SVG.Util.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Svgd.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Widgetsd.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Xmld.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Guid.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\Bin\SVG.Entity.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH /DLL Win32\Debug\connection.obj
+         Win32\Debug\moc_itemcommand.obj
+         Win32\Debug\moc_kresizefocus.obj
+         Win32\Debug\moc_krotateitem.obj
+         Win32\Debug\moc_kunititem.obj
+         Win32\Debug\moc_pointitemcontainer.obj
+         Win32\Debug\moc_shapeformattingsetting.obj
+         Win32\Debug\moc_svgcirclecommonelement.obj
+         Win32\Debug\moc_svgcircleelement.obj
+         Win32\Debug\moc_svgcirclefloorelement.obj
+         Win32\Debug\moc_svgellipseelement.obj
+         Win32\Debug\moc_svglineelement.obj
+         Win32\Debug\moc_svgnode.obj
+         Win32\Debug\moc_svgnodecontainer.obj
+         Win32\Debug\moc_svgnodecontainerfake.obj
+         Win32\Debug\moc_svgnodeelement.obj
+         Win32\Debug\moc_svgpathelement.obj
+         Win32\Debug\moc_svgpointitem.obj
+         Win32\Debug\moc_svgpolygonelement.obj
+         Win32\Debug\moc_svgpolylineelement.obj
+         Win32\Debug\moc_svgrectelement.obj
+         Win32\Debug\moc_svgtextelement.obj
+         Win32\Debug\devicetype.obj
+         Win32\Debug\graphprimitiveprop.obj
+         Win32\Debug\ilink.obj
+         Win32\Debug\itemcommand.obj
+         Win32\Debug\kresizefocus.obj
+         Win32\Debug\krotateitem.obj
+         Win32\Debug\kunititem.obj
+         Win32\Debug\pointitemcontainer.obj
+         Win32\Debug\pointitemcontainerdelegate.obj
+         Win32\Debug\shapeformattingsetting.obj
+         Win32\Debug\svgcirclecommonelement.obj
+         Win32\Debug\svgcircleelement.obj
+         Win32\Debug\svgcirclefloorelement.obj
+         Win32\Debug\svgconnectionpointcontainer.obj
+         Win32\Debug\svgellipseelement.obj
+         Win32\Debug\svglineelement.obj
+         Win32\Debug\svgnode.obj
+         Win32\Debug\svgnodecontainer.obj
+         Win32\Debug\svgnodecontainerfake.obj
+         Win32\Debug\svgnodeelement.obj
+         Win32\Debug\svgnodeelementfactory.obj
+         Win32\Debug\svgpathelement.obj
+         Win32\Debug\svgpointitem.obj
+         Win32\Debug\svgpolygonelement.obj
+         Win32\Debug\svgpolylineelement.obj
+         Win32\Debug\svgrectelement.obj
+         Win32\Debug\svgtextelement.obj
+         Win32\Debug\textformattingsetting.obj
+         SVG.Entity.vcxproj -> F:\Qt\Project\Local\ElectricStudio1.0\Src\Entity\..\..\Bin\SVG.Entity.dll
+     1>已完成生成项目“F:\Qt\Project\Local\ElectricStudio1.0\Src\Entity\SVG.Entity.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:59.47

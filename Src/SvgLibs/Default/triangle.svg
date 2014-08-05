@@ -1,0 +1,7 @@
+<?xml version="1.0"  encoding='UTF-8' standalone="no"?>
+
+<svg version="1.0"
+     xmlns="http://www.w3.org/2000/svg">
+  <polygon fill="none" stroke="red" stroke-width="2"
+            points="100,0 0,200 200,200" />
+</svg>

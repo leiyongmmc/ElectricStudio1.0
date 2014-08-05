@@ -1,0 +1,143 @@
+﻿生成启动时间为 8/6/2014 6:16:16 AM。
+     1>项目“F:\Qt\Project\Local\ElectricStudio1.0\Src\App\SVG.App.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Moc'ing actionmanager.h...
+         Moc'ing alignitems.h...
+         Moc'ing appcommand.h...
+         Moc'ing appmanager.h...
+         Moc'ing arrangetoolbar.h...
+         Moc'ing coordinateframe.h...
+         Moc'ing editortoolbar.h...
+         Moc'ing electricpropertytablewidget.h...
+         Moc'ing fileservice.h...
+         Moc'ing graphicsscene.h...
+         Moc'ing graphicsview.h...
+         Moc'ing griddialog.h...
+         Moc'ing gridsetting.h...
+         Moc'ing locationandsizetoolbar.h...
+         Moc'ing maintoolbar.h...
+         Moc'ing mainwindow.h...
+         Moc'ing menumanager.h...
+         Moc'ing optionsdialog.h...
+         Moc'ing propertiesandstyletoolbar.h...
+         Moc'ing propertiesandstylewidget.h...
+         Moc'ing resourcetreewidget.h...
+         Moc'ing shapeformattingtoolbar.h...
+         Moc'ing statubar.h...
+         Moc'ing textformattingtoolbar.h...
+         Moc'ing toolbar.h...
+         Moc'ing toolbarmanager.h...
+         Moc'ing toolboxtoolbar.h...
+         Moc'ing toolboxwidget.h...
+         Moc'ing triggermanager.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Util /I..\Entity /I..\IO /IF:\Qt\Qt5.3.1\5.3\msvc2013_opengl\include /IF:\Qt\Qt5.3.1\5.3\msvc2013_opengl\include\QtSvg /IF:\Qt\Qt5.3.1\5.3\msvc2013_opengl\include\QtWidgets /IF:\Qt\Qt5.3.1\5.3\msvc2013_opengl\include\QtSensors /IF:\Qt\Qt5.3.1\5.3\msvc2013_opengl\include\QtGui /IF:\Qt\Qt5.3.1\5.3\msvc2013_opengl\include\QtCore /I..\..\Builder\App /I. /I"F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\mkspecs\win32-msvc2013" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_SVG_LIB /D QT_WIDGETS_LIB /D QT_SENSORS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 ..\..\Builder\App\moc_actionmanager.cpp ..\..\Builder\App\moc_alignitems.cpp ..\..\Builder\App\moc_appcommand.cpp ..\..\Builder\App\moc_appmanager.cpp ..\..\Builder\App\moc_arrangetoolbar.cpp ..\..\Builder\App\moc_coordinateframe.cpp ..\..\Builder\App\moc_editortoolbar.cpp ..\..\Builder\App\moc_electricpropertytablewidget.cpp ..\..\Builder\App\moc_fileservice.cpp ..\..\Builder\App\moc_graphicsscene.cpp ..\..\Builder\App\moc_graphicsview.cpp ..\..\Builder\App\moc_griddialog.cpp ..\..\Builder\App\moc_gridsetting.cpp ..\..\Builder\App\moc_locationandsizetoolbar.cpp ..\..\Builder\App\moc_maintoolbar.cpp ..\..\Builder\App\moc_mainwindow.cpp ..\..\Builder\App\moc_menumanager.cpp ..\..\Builder\App\moc_optionsdialog.cpp ..\..\Builder\App\moc_propertiesandstyletoolbar.cpp ..\..\Builder\App\moc_propertiesandstylewidget.cpp ..\..\Builder\App\moc_resourcetreewidget.cpp ..\..\Builder\App\moc_shapeformattingtoolbar.cpp ..\..\Builder\App\moc_statubar.cpp ..\..\Builder\App\moc_textformattingtoolbar.cpp ..\..\Builder\App\moc_toolbar.cpp ..\..\Builder\App\moc_toolbarmanager.cpp ..\..\Builder\App\moc_toolboxtoolbar.cpp ..\..\Builder\App\moc_toolboxwidget.cpp ..\..\Builder\App\moc_triggermanager.cpp
+         moc_actionmanager.cpp
+         moc_alignitems.cpp
+         moc_appcommand.cpp
+         moc_appmanager.cpp
+         moc_arrangetoolbar.cpp
+         moc_coordinateframe.cpp
+         moc_editortoolbar.cpp
+         moc_electricpropertytablewidget.cpp
+         moc_fileservice.cpp
+         moc_graphicsscene.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_graphicsview.cpp
+     1>f:\qt\project\local\electricstudio1.0\src\entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_griddialog.cpp
+         moc_gridsetting.cpp
+     1>f:\qt\project\local\electricstudio1.0\builder\app\../../Src/App/gridsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_locationandsizetoolbar.cpp
+         moc_maintoolbar.cpp
+         moc_mainwindow.cpp
+         moc_menumanager.cpp
+         moc_optionsdialog.cpp
+         moc_propertiesandstyletoolbar.cpp
+         moc_propertiesandstylewidget.cpp
+         正在生成代码...
+         正在编译...
+         moc_resourcetreewidget.cpp
+         moc_shapeformattingtoolbar.cpp
+         moc_statubar.cpp
+         moc_textformattingtoolbar.cpp
+     1>F:\Qt\Project\Local\ElectricStudio1.0\Src\Entity\textformattingsetting.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         moc_toolbar.cpp
+         moc_toolbarmanager.cpp
+         moc_toolboxtoolbar.cpp
+         moc_toolboxwidget.cpp
+         moc_triggermanager.cpp
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\Bin\\SVG.App.exe" /NOLOGO /LIBPATH:F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib /LIBPATH:F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib /LIBPATH:F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib /LIBPATH:F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\ glu32.lib opengl32.lib gdi32.lib user32.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\qtmaind.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Cored.lib F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\\SVG.Util.lib F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\\SVG.Entity.lib F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\\SVG.IO.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Svgd.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Widgetsd.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Sensorsd.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Guid.lib F:\Qt\Qt5.3.1\5.3\msvc2013_opengl\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\Bin\SVG.App.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\moc_actionmanager.obj
+         Win32\Debug\moc_alignitems.obj
+         Win32\Debug\moc_appcommand.obj
+         Win32\Debug\moc_appmanager.obj
+         Win32\Debug\moc_arrangetoolbar.obj
+         Win32\Debug\moc_coordinateframe.obj
+         Win32\Debug\moc_editortoolbar.obj
+         Win32\Debug\moc_electricpropertytablewidget.obj
+         Win32\Debug\moc_fileservice.obj
+         Win32\Debug\moc_graphicsscene.obj
+         Win32\Debug\moc_graphicsview.obj
+         Win32\Debug\moc_griddialog.obj
+         Win32\Debug\moc_gridsetting.obj
+         Win32\Debug\moc_locationandsizetoolbar.obj
+         Win32\Debug\moc_maintoolbar.obj
+         Win32\Debug\moc_mainwindow.obj
+         Win32\Debug\moc_menumanager.obj
+         Win32\Debug\moc_optionsdialog.obj
+         Win32\Debug\moc_propertiesandstyletoolbar.obj
+         Win32\Debug\moc_propertiesandstylewidget.obj
+         Win32\Debug\moc_resourcetreewidget.obj
+         Win32\Debug\moc_shapeformattingtoolbar.obj
+         Win32\Debug\moc_statubar.obj
+         Win32\Debug\moc_textformattingtoolbar.obj
+         Win32\Debug\moc_toolbar.obj
+         Win32\Debug\moc_toolbarmanager.obj
+         Win32\Debug\moc_toolboxtoolbar.obj
+         Win32\Debug\moc_toolboxwidget.obj
+         Win32\Debug\moc_triggermanager.obj
+         Win32\Debug\qrc_Images.obj
+         Win32\Debug\qrc_Theme.obj
+         Win32\Debug\actionmanager.obj
+         Win32\Debug\alignitems.obj
+         Win32\Debug\appcommand.obj
+         Win32\Debug\appglobal.obj
+         Win32\Debug\appmanager.obj
+         Win32\Debug\arrangetoolbar.obj
+         Win32\Debug\coordinateframe.obj
+         Win32\Debug\editortoolbar.obj
+         Win32\Debug\electricpropertytablewidget.obj
+         Win32\Debug\fileservice.obj
+         Win32\Debug\graphicsscene.obj
+         Win32\Debug\graphicsview.obj
+         Win32\Debug\griddialog.obj
+         Win32\Debug\gridsetting.obj
+         Win32\Debug\locationandsizetoolbar.obj
+         Win32\Debug\main.obj
+         Win32\Debug\maintoolbar.obj
+         Win32\Debug\mainwindow.obj
+         Win32\Debug\menumanager.obj
+         Win32\Debug\optionsdialog.obj
+         Win32\Debug\propertiesandstyletoolbar.obj
+         Win32\Debug\propertiesandstylewidget.obj
+         Win32\Debug\resourcelibrary.obj
+         Win32\Debug\resourcemanager.obj
+         Win32\Debug\resourcetreewidget.obj
+         Win32\Debug\shapeformattingtoolbar.obj
+         Win32\Debug\statubar.obj
+         Win32\Debug\svgitem.obj
+         Win32\Debug\test.obj
+         Win32\Debug\textformattingtoolbar.obj
+         Win32\Debug\toolbar.obj
+         Win32\Debug\toolbarmanager.obj
+         Win32\Debug\toolboxtoolbar.obj
+         Win32\Debug\toolboxwidget.obj
+         Win32\Debug\triggermanager.obj
+         SVG.App.vcxproj -> F:\Qt\Project\Local\ElectricStudio1.0\Src\App\..\..\Bin\SVG.App.exe
+     1>已完成生成项目“F:\Qt\Project\Local\ElectricStudio1.0\Src\App\SVG.App.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:43.00

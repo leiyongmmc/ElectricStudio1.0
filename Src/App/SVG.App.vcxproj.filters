@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Trigger\actionmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alignitems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="appcommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="appglobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="appmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\arrangetoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid\coordinateframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\editortoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Property\electricpropertytablewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileInfo\fileservice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicsscene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicsview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="griddialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gridsetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\locationandsizetoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\maintoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\menumanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optionsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Property\propertiesandstyletoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Property\propertiesandstylewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resourcelibrary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resourcemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resourcetreewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\shapeformattingtoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\statubar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="svgitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\textformattingtoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\toolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\toolbarmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="toolboxtoolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="toolboxwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger\triggermanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_actionmanager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_alignitems.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_appcommand.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_appmanager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_arrangetoolbar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_coordinateframe.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_editortoolbar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_electricpropertytablewidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_fileservice.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_graphicsscene.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_graphicsview.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_griddialog.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_gridsetting.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_locationandsizetoolbar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_maintoolbar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_menumanager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_optionsdialog.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_propertiesandstyletoolbar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_propertiesandstylewidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_resourcetreewidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_shapeformattingtoolbar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_statubar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_textformattingtoolbar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_toolbar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_toolbarmanager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_toolboxtoolbar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_toolboxwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Builder\App\moc_triggermanager.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_Images.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_Theme.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Trigger\actionmanager.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="alignitems.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="appcommand.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="appglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="appmanager.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\arrangetoolbar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Grid\coordinateframe.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\editortoolbar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Property\electricpropertytablewidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FileInfo\fileservice.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphicsscene.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphicsview.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="griddialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gridsetting.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\locationandsizetoolbar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\maintoolbar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\menumanager.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="optionsdialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Property\propertiesandstyletoolbar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Property\propertiesandstylewidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="resourcelibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resourcemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="resourcetreewidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\shapeformattingtoolbar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\statubar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="svgitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="Trigger\textformattingtoolbar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\toolbar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\toolbarmanager.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="toolboxtoolbar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="toolboxwidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Trigger\triggermanager.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app_trans_ch.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Grid\coordinateframe.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="griddialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="optionsdialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Images\Add.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\AlignBottom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\AlignCenter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\AlignLeft.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\AlignMiddle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\AlignRight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\AlignTop.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ArrowDown.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ArrowRight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ArrowStyle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Bold.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Clear.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\ConnectorMode.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Copy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Cut.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\DistributeH.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\DistributeV.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\File.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\FillColor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Find.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Folder.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Group.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="..\Images\Images.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="..\Images\Italic.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\LineColor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\LinePattern.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\LineWidth.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\New.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Option.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Paste.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Redo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Refresh.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Remove.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Save.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\SelectMode.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Submit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\TextAlignCenter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\TextAlignLeft.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\TextAlignRight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\TextColor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="..\Theme\Theme.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="..\Images\UnGroup.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Underline.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\Undo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\loop_12x12.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Theme\stylesheet.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Images\test1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_coordinateframe.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_griddialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_optionsdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
